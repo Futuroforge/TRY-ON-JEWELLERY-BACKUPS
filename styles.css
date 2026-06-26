@@ -566,6 +566,7 @@ h3 {
 @media (max-width: 680px) {
   .site-header {
     gap: 14px;
+    position: relative;
   }
 
   .header-cta {
@@ -578,23 +579,56 @@ h3 {
   }
 
   .hero-content {
-    padding-top: 84px;
-    padding-bottom: 84px;
+    padding: 54px 18px 58px;
+  }
+
+  h1 {
+    max-width: 100%;
+    font-size: clamp(2.15rem, 12vw, 3.15rem);
+    line-height: 1.04;
+  }
+
+  h2 {
+    font-size: clamp(1.65rem, 9vw, 2.35rem);
+    line-height: 1.08;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+    line-height: 1.55;
   }
 
   .workflow-map {
-    opacity: 0.46;
+    opacity: 0.34;
   }
 
   .node {
-    min-width: 94px;
-    padding: 10px;
-    font-size: 0.82rem;
+    display: none;
+  }
+
+  .pulse {
+    width: 9px;
+    height: 9px;
+    box-shadow: 0 0 0 7px rgba(248, 215, 126, 0.1);
   }
 
   .hero-metrics span,
   .hero-actions a {
     width: 100%;
+  }
+
+  .hero-metrics {
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-metrics span {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px;
+    line-height: 1.25;
   }
 
   .intro-grid,
